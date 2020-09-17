@@ -1,0 +1,86 @@
+/* Feuille de style parce qu'on n'a pas le droit d'utiliBbootstrap */
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+
+	padding-inline-start: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+article {
+	background-color: #F1F1F1;
+}
+
+aside {
+	background-color: #F1F1F1;
+}
+
+
+footer {
+	background-color: #F1F1F1;
+}
+
+
+/* Ids */
+#hebergements {
+	display: flex;
+	justify-content: space-arround;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+/* Class */
+.bleu {
+	color: #0065FC;
+}
+
+.bleu-clair {
+	color: DEEBFF;
+}
+
+.fond-gris {
+	background-color: #F2F2F2;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: inline;
+}
+
+.card {
+	background-color: white;
+	width: 30%;
+	margin:1em;
+}
+
+.img-herbergements {
+	margin: 0.2em;
+	border-radius: 15px 15px 0 0;
+	width: auto;
+	height: 150px;
+}
+
+
+.br-15 {
+    border-radius: 15px;
+}
