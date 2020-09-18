@@ -10,6 +10,7 @@ body {
 nav {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 1.5em;
 }
 
 ul {
@@ -23,7 +24,15 @@ li {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
+	color: black;
 }
+
+/* mouse over link */
+a:hover {
+  	color: #0065FC;
+}
+
 
 h3 {
 	margin:0;
@@ -31,18 +40,7 @@ h3 {
 	font-weight: bold;
 }
 
-article {
-	background-color: #F1F1F1;
-}
 
-aside {
-	background-color: #F1F1F1;
-}
-
-
-footer {
-	background-color: #F1F1F1;
-}
 
 
 
@@ -153,6 +151,17 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: inline;
+}
+
+.nav-item {
+	display: inline;
+	padding: 0.5em;
+	font-size: 0.8em;
+}
+
+/* selected link */
+.active {
+  	border-top: 1px solid #0065FC;
 }
 
 .card {
