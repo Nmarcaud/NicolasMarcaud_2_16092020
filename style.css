@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	width: 1200px;
+    margin: auto;
 }
 
 
@@ -23,6 +25,12 @@ a {
 	text-decoration: none;
 }
 
+h3 {
+	margin:0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
 article {
 	background-color: #F1F1F1;
 }
@@ -37,12 +45,92 @@ footer {
 }
 
 
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+{
+
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+
+}
+
+/* Sur les téléviseurs */
+@media tv
+{
+
+}
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+{
+
+}
+
+
+
+
 /* Ids */
 #hebergements {
 	display: flex;
 	justify-content: space-arround;
 	flex-wrap: wrap;
 }
+
+
+
+/*  Images Hebergement en Background */
+#img-hebergement-1 {
+	background: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-2 {
+	background: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-3 {
+	background: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-4 {
+	background: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-5 {
+	background: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-6 {
+	background: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-7 {
+	background: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-8 {
+	background: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg) center;
+	background-size: cover;
+}
+
+#img-hebergement-9 {
+	background: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg) center;
+	background-size: cover;
+}
+
+
+
+
 
 
 
@@ -54,7 +142,7 @@ footer {
 }
 
 .bleu-clair {
-	color: DEEBFF;
+	color: #DEEBFF;
 }
 
 .fond-gris {
@@ -78,6 +166,12 @@ footer {
 	border-radius: 15px 15px 0 0;
 	width: auto;
 	height: 150px;
+}
+
+
+.text-hebergement {
+	padding: 0.5em;
+	margin: 0;
 }
 
 
