@@ -1,26 +1,16 @@
 /* Feuille de style parce qu'on n'a pas le droit d'utiliBbootstrap */
 
+:root {
+	--primary: #0065FC;
+	--secondary: #DEEBFF;
+	--background: #F2F2F2;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
-	width: 1200px;
-    margin: auto;
 }
 
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 1.5em;
-}
-
-ul {
-
-	padding-inline-start: 0;
-}
-
-li {
-	list-style: none;
-}
 
 a {
 	text-decoration: none;
@@ -51,38 +41,30 @@ p {
 	font-size: 0.8em;
 }
 
-
-
-
-
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-@media screen and (max-width: 1280px)
-{
-
+article {
+	width: 66%;
 }
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px)
-{
-
+aside {
+	margin-left: 2em;
+	width: 33%;
 }
 
-/* Sur les téléviseurs */
-@media tv
-{
 
-}
 
-/* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
-{
 
-}
 
 
 
 
 /* Ids */
+#first_section {
+	justify-content: space-arround;
+	flex-wrap: wrap;
+}
+
+
+
 #hebergements {
 	display: flex;
 	justify-content: space-arround;
@@ -91,59 +73,14 @@ p {
 
 
 
-/*  Images Hebergement en Background */
-#img-hebergement-1 {
-	background: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-2 {
-	background: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-3 {
-	background: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-4 {
-	background: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-5 {
-	background: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-6 {
-	background: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-7 {
-	background: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-8 {
-	background: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg) center;
-	background-size: cover;
-}
-
-#img-hebergement-9 {
-	background: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg) center;
-	background-size: cover;
-}
-
-
-
-
-
-
 
 /* Class */
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
 .bleu {
 	color: #0065FC;
 }
@@ -158,6 +95,10 @@ p {
 
 .fond-gris {
 	background-color: #F2F2F2;
+}
+
+.shadow {
+	box-shadow: 2px 2px 15px rgba(0,0,0,.07);
 }
 
 .menu {
@@ -181,30 +122,66 @@ p {
 	display: inline;
 }
 
-.card {
+.btn-filtre {
+	border: 1px solid #F2F2F2;
+	border-radius: 30px;
+	padding: 1em; 
+	font-weight: bold;
+}
+
+.picto-filtre {
+	background-color: #0065FC;
+	padding: 1em;
+	border-radius: 30px;
+}
+
+.hebergement {
 	background-color: white;
 	width: 30%;
 	margin:1em;
 }
 
-.img-herbergements {
-	margin: 0.2em;
+.hebergement-populaire {
+	background-color: white;
+	width: 100%;
+	margin:1em;
+}
+
+.herbergement-picture {
+	object-fit: cover;
+	object-position: center center;
 	border-radius: 15px 15px 0 0;
-	width: auto;
-	height: 150px;
+	height: 110px;
+	width: 100%;
+}
+
+.herbergement-picture-populaire {
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 15px 0 0 15px;
+	height: 130px;
+	width: 130px;
 }
 
 
-.text-hebergement {
+
+.hebergement-description {
 	padding: 0.5em;
 	padding-left: 0.8em;
 	margin: 0;
 }
 
 
+
+
 /* Coins arrondis */
 .br-15 {
     border-radius: 15px;
+}
+
+
+.d-flex {
+	display: flex;
 }
 
 /* Margin */
@@ -233,6 +210,7 @@ p {
 .mb-8 {
 	margin-bottom: 5em;
 }
+
 
 /* Margin right */
 .mr-1 {

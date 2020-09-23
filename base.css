@@ -1,0 +1,71 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+header, nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+nav {
+	width: 100%;
+	flex-direction: row;
+}
+
+nav span {
+	flex-basis: 50%;
+	text-align: center;
+	
+}
+
+nav span a {
+	padding: 1em;
+	display: block;
+	color: black;
+}
+
+
+/* Ordre mobile */
+#nav-logo {
+	margin-top: 3px;
+	order: -2;
+}
+#nav-item-3 {
+	order: -1;
+}
+
+/* S'inscrire format */
+#nav-item-3 a {
+	margin-top: 3px;
+	font-weight: bold;
+	color: #0065FC;
+}
+
+/* Border */
+#nav-item-1 {
+	border-bottom: 3px solid #0065FC;
+}
+
+#nav-item-2 {
+	border-bottom: 3px solid #F2F2F2;
+}

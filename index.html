@@ -16,26 +16,25 @@
         <script src="https://kit.fontawesome.com/4c1a117001.js" crossorigin="anonymous"></script>
 
 
-        <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="style.css">-->
+
+
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="flexbox.css">
 
         <title>Reservia, Hébergement et Activités</title>
     </head>
 
     <body>
-            
-        <nav>
-
-           <img src="images/logo/Reservia.svg" title="Je suis un logo" alt="Logo Reservia">
-
-            <ul id="menu">
-                <li class="nav-item active"><a href="#" class="bleu">Hébergement</a></li>
-                <li class="nav-item"><a href="#">Activités</a></li>
-                <li class="nav-item"><b><a href="#" class="bleu">S'inscrire</a></b></li>
-            </ul>
-
-        </nav>
 
         <header>
+            <nav>
+                <span id="nav-logo"><img src="images/logo/Reservia.svg" title="Je suis un logo" alt="Logo Reservia"></span>
+                <span id="nav-item-1"><a href="#">Hébergement</a></span>
+                <span id="nav-item-2"><a href="#">Activités</a></span>
+                <span id="nav-item-3"><a href="#">S'inscrire</a></span>
+            </nav>
+   
 
             <h3 class="mb-3">Trouvez votre hébergement pour des vacances de rève</h3>
             <p class="mb-6">En plein centre ville ou en pleine nature</p>
@@ -43,9 +42,9 @@
 
             <!-- Search bar -->
             <form method="POST" class="mb-6">
-                 <i class="fas fa-map-marker-alt"></i>
-                 <input type="search" name="recherche" value="Marseille, France">
-                 <button type="submit">Rechercher</button>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" name="recherche" value="Marseille, France">
+                <button type="submit">Rechercher</button>
             </form>
 
 
@@ -53,10 +52,10 @@
             <div>
                 <ul>
                     <li class="inline mr-5">Filtres</li>
-                    <li class="inline mr-5"><span><i class="fas fa-money-bill-wave"></i></span> Économique</li>
-                    <li class="inline mr-5"><span><i class="fas fa-child"></i></span> Familial</li>
-                    <li class="inline mr-5"><span><i class="fas fa-heart"></i></span> Romantique</li>
-                    <li class="inline mr-5"><span><i class="fas fa-dog"></i></span> Animaux autorisés</li>
+                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-money-bill-wave"></i></span> Économique</li>
+                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-child"></i></span> Familial</li>
+                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-heart"></i></span> Romantique</li>
+                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-dog"></i></span> Animaux autorisés</li>
                 </ul>
             </div>
 
@@ -69,7 +68,269 @@
 
 
         <!-- HEBERGEMENTS -->
-        <section class="br-15">
+        <div id="herbergements" style="display: flex; margin: auto; width: 1440px; height: 630px; display: none;">
+            
+
+            <div id="hebergements-results" style="flex-basis: 75%; margin: 1.5em; background-color: #F2F2F2; border-radius: 15px; padding: 1.5em;">
+
+                <h2 id="hebergements-results-title" style="margin-top: 0; font-size: 1.2em;">Hébergement à Marseille</h2>
+
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+                    <div id="hebergements-results-1" style="flex-basis: 29%; margin: 1em;border: 4px solid white; border-radius: 18px; background-color: white; box-shadow: 2px 2px 15px rgba(0,0,0,.07); height: 200px">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2" style="font-size: 1em;">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating" style="margin-top: auto">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-results-2" style="flex-basis: 29%; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-results-3" style="flex-basis: 29%; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-results-1" style="flex-basis: 29%; margin: 1em;border: 2px solid white; border-radius: 15px; background-color: white; box-shadow: 2px 2px 15px rgba(0,0,0,.07);">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2" style="font-size: 1em;">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-results-2" style="flex-basis: 29%; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-results-3" style="flex-basis: 29%; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+            <div id="hebergements-populaires" style="flex-basis: 25 %; margin: 1.5em; background-color: #F2F2F2; border-radius: 15px; padding: 1.5em;">
+
+                <h2 id="hebergements-populaires-title" style="margin-top: 0; font-size: 1.2em; display: flex; justify-content: space-between;">Les plus populaires <span><i class="fas fa-chart-line"></i></span></h2>
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between; flex-wrap: wrap;">
+
+                    <div id="hebergements-populaires-results-1" style="display:flex; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture-populaire">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-populaires-results-2" style="display:flex; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture-populaire">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="hebergements-populaires-results-3" style="display:flex; padding: 1em;">
+                        
+                        <!-- Photo -->
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture-populaire">
+
+                        <!-- box description -->
+                        <div class="hebergement-description">
+                            <!-- Nom hébergement -->
+                            <h3 class="mb-2">Auberge La Cannebière</h3>
+
+                            <!-- Prix -->
+                            <p class="mb-2">Nuit à pertir de <b>25€</b></p>
+
+                            <!-- Evaluation -->
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+
+        <section id="first_section" class="container br-15 d-flex" style="display: none;">
 
             <article class="fond-gris br-15">
 
@@ -78,13 +339,13 @@
                 <div id="hebergements">
                     
                     <!-- Herbergement 1 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-1" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Auberge La Cannebière</h3>
 
@@ -92,41 +353,55 @@
                             <p class="mb-2">Nuit à pertir de <b>25€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+                            
                         </div>
 
                     </div>
 
 
                     <!-- Herbergement 2 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-2" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Hôtel du port</h3>
 
                             <!-- Prix -->
-                            <p class="mb-2 class="mb-2"">Nuit à pertir de <b>52€</b></p>
+                            <p class="mb-2">Nuit à pertir de <b>52€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
 
                     <!-- Herbergement 3 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-3" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Hôtel Les mouettes</h3>
 
@@ -134,20 +409,27 @@
                             <p class="mb-2">Nuit à pertir de <b>76€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
 
                     <!-- Herbergement 4 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-4" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Hôtel de la mer</h3>
 
@@ -155,20 +437,27 @@
                             <p class="mb-2">Nuit à pertir de <b>46€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
 
                     <!-- Herbergement 5 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-5" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Auberge Le Panier</h3>
 
@@ -176,20 +465,27 @@
                             <p class="mb-2">Nuit à pertir de <b>23€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
 
                     <!-- Herbergement 6 -->
-                    <div class="card br-15">
+                    <div class="hebergement shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-6" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Hôtel chez Amina</h3>
 
@@ -197,7 +493,14 @@
                             <p class="mb-2">Nuit à pertir de <b>96€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                            </div>
+
                         </div>
 
                     </div>
@@ -217,33 +520,40 @@
                 <div id="hebergements-populaires">
 
                     <!-- Herbergement populaire 1 -->
-                    <div class="card br-15">
+                    <div class="hebergement-populaire shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-7" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
-                            <h3 class="mb-2">Hôtel Le solaiel du matin</h3>
+                            <h3 class="mb-2">Hôtel Le soleil du matin</h3>
 
                             <!-- Prix -->
                             <p class="mb-2">Nuit à pertir de <b>128€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
                     <!-- Herbergement populaire 2 -->
-                    <div class="card br-15">
+                    <div class="hebergement-populaire shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-8" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Au coeur de l'eau Chambres d'hôtes</h3>
 
@@ -251,19 +561,26 @@
                             <p class="mb-2">Nuit à pertir de <b>71€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+
                         </div>
 
                     </div>
 
                     <!-- Herbergement populaire 3 -->
-                    <div class="card br-15">
+                    <div class="hebergement-populaire shadow br-15">
 
                         <!-- Photo -->
-                        <div id="img-hebergement-9" class="img-herbergements"></div>
+                        <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="herbergement-picture">
 
                         <!-- box description -->
-                        <div class="text-hebergement">
+                        <div class="hebergement-description">
                             <!-- Nom hébergement -->
                             <h3 class="mb-2">Hôtel Tout bleu et Blanc</h3>
 
@@ -271,7 +588,14 @@
                             <p class="mb-2">Nuit à pertir de <b>68€</b></p>
 
                             <!-- Evaluation -->
-                            <i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star bleu"></i><i class="fas fa-star gris"></i>
+                            <div class="rating">
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star bleu"></i>
+                                <i class="fas fa-star gris"></i>
+                            </div>
+
                         </div>
 
                     </div>
@@ -285,7 +609,7 @@
 
 
         <!-- ACTIVITES -->
-        <section>
+        <section class="container" style="display: none;">
 
             <h2 class="my-3">Activités à Marseille</h2>
 
@@ -381,29 +705,31 @@
                 
 
         <footer class="fond-gris">
-           
-            <h6>À Propos</h6>
-            <ul>
-                <li><small><a href="#">Fonctionnement du site</a></small></li>
-                <li><small><a href="#">Conditions générales de vente</a></small></li>
-                <li><small><a href="#">Données et confidentialité</a></small></li>
-            </ul>
-        
-            <h6>Nos hébergements</h6>
-            <ul>
-                <li><small><a href="#">Charte qualité</a></small></li>
-                <li><small><a href="#">Soumettre votre hôtel</a></small></li>
-            </ul>
-   
-            <h6>Assistance</h6>
-            <ul>
-                <li><small><a href="#">Centre d'aide</a></small></li>
-                <li><small><a href="#">Nous contacter</a></small></li>
-            </ul>
+
+            <div class="container">
+
+                <h6>À Propos</h6>
+                <ul>
+                    <li><small><a href="#">Fonctionnement du site</a></small></li>
+                    <li><small><a href="#">Conditions générales de vente</a></small></li>
+                    <li><small><a href="#">Données et confidentialité</a></small></li>
+                </ul>
+            
+                <h6>Nos hébergements</h6>
+                <ul>
+                    <li><small><a href="#">Charte qualité</a></small></li>
+                    <li><small><a href="#">Soumettre votre hôtel</a></small></li>
+                </ul>
+       
+                <h6>Assistance</h6>
+                <ul>
+                    <li><small><a href="#">Centre d'aide</a></small></li>
+                    <li><small><a href="#">Nous contacter</a></small></li>
+                </ul>
+                
+            </div>
            
         </footer>
-
-
 
     </body>
 </html>
