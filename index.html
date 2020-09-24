@@ -28,41 +28,48 @@
     <body>
 
         <header>
-            <nav>
+
+            <nav id="header-nav">
                 <span id="nav-logo"><img src="images/logo/Reservia.svg" title="Je suis un logo" alt="Logo Reservia"></span>
                 <span id="nav-item-1"><a href="#">Hébergement</a></span>
                 <span id="nav-item-2"><a href="#">Activités</a></span>
                 <span id="nav-item-3"><a href="#">S'inscrire</a></span>
             </nav>
+
+
+            <div id="header-text">
+                <h2 class="mb-3">Trouvez votre hébergement pour des vacances de rève</h2>
+                <p class="mb-6">En plein centre ville ou en pleine nature</p>
+            </div>
    
 
-            <h3 class="mb-3">Trouvez votre hébergement pour des vacances de rève</h3>
-            <p class="mb-6">En plein centre ville ou en pleine nature</p>
-
-
             <!-- Search bar -->
-            <form method="POST" class="mb-6">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="recherche" value="Marseille, France">
-                <button type="submit">Rechercher</button>
-            </form>
-
+            <div id="header-search">
+                <form method="POST" action="">
+                    <span id="form-picto" class="form-item"><i class="fas fa-map-marker-alt"></i></span>
+                    <input id="form-searchfield" type="search" name="recherche" value="Marseille, France" class="form-item">
+                    <button id="form-text-btn" type="submit" class="form-item">Rechercher</button>
+                    <button id="form-picto-btn" type="submit" class="form-item"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+   
 
             <!-- Filtres -->
-            <div>
+            <div id="header-filtres">
+                
+                <h3>Filtres</h3>
                 <ul>
-                    <li class="inline mr-5">Filtres</li>
-                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-money-bill-wave"></i></span> Économique</li>
-                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-child"></i></span> Familial</li>
-                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-heart"></i></span> Romantique</li>
-                    <li class="inline btn-filtre mr-5"><span class="picto-filtre"><i class="fas fa-dog"></i></span> Animaux autorisés</li>
+                    <li id="filtre-btn-1"><span><i class="fas fa-money-bill-wave"></i></span> Économique</li>
+                    <li id="filtre-btn-2"><span><i class="fas fa-child"></i></span> Familial</li>
+                    <li id="filtre-btn-3"><span><i class="fas fa-heart"></i></span> Romantique</li>
+                    <li id="filtre-btn-4"><span><i class="fas fa-dog"></i></span> Animaux autorisés</li>
                 </ul>
             </div>
 
             <!-- infos -->
-            <small><span class="mr-5"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</small>
-            
-           
+            <div id="header-infos">
+                <small><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</small>
+            </div>
             
         </header>
 

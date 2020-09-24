@@ -5,7 +5,12 @@
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
+ul {
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	padding-inline-start: 0;
+}
 a {
 	text-decoration: none;
 }
@@ -14,14 +19,22 @@ img {
 }
 
 
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-header, nav {
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+header div {
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+nav {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -35,7 +48,7 @@ nav {
 nav span {
 	flex-basis: 50%;
 	text-align: center;
-	
+
 }
 
 nav span a {
@@ -43,7 +56,6 @@ nav span a {
 	display: block;
 	color: black;
 }
-
 
 /* Ordre mobile */
 #nav-logo {
@@ -69,3 +81,103 @@ nav span a {
 #nav-item-2 {
 	border-bottom: 3px solid #F2F2F2;
 }
+
+h2 {
+	font-size: 0.9rem;
+}
+
+
+/* ---- Form ---- */
+
+#header-search {
+	display: inline-flex;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+#header-search form {
+	display: flex;
+	width: 100%;
+	border-radius: 20px;
+	border: 1px solid #F2F2F2;
+}
+
+.form-item {
+	padding: 1em;
+	flex-grow: 1;
+}
+
+
+#form-picto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2F2F2;
+	border-radius: 20px 0 0 20px;
+	flex-grow: 1;
+}
+
+#form-searchfield {
+	flex-grow: 2;
+	font-weight: bold;
+}
+
+#form-text-btn {
+	display: none;
+}
+#form-picto-btn {
+	border: 1px solid #0065FC;
+	border-radius: 20px;
+	flex-grow: 1;
+}
+
+#header-search button {
+	background-color: #0065FC;
+	color: white;
+}
+
+
+
+/* ---- Fltres ---- */
+
+#header-filtres {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+}
+
+#header-filtres ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#header-filtres li {
+	padding: 1em 1em 1em 0; 
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	border-radius: 50px;
+	border: 2px solid lightgrey;
+	font-weight: bold;
+}
+
+#header-filtres li span {
+	padding: 1em; 
+	border-radius: 50px;
+	background-color: #DEEBFF;
+	border: 2px solid #DEEBFF;
+	color: #0065FC;
+	font-size: 1.2rem;
+	margin-right: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
