@@ -92,7 +92,7 @@ h2 {
 #header-search {
 	display: inline-flex;
 	justify-content: center;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 #header-search form {
@@ -118,7 +118,7 @@ h2 {
 }
 
 #form-searchfield {
-	flex-grow: 2;
+	flex-grow: 1;
 	font-weight: bold;
 }
 
@@ -160,22 +160,35 @@ h2 {
 	font-weight: bold;
 }
 
+/* Pictos */
 #header-filtres li span {
 	padding: 1em; 
 	border-radius: 50px;
 	background-color: #DEEBFF;
-	border: 2px solid #DEEBFF;
 	color: #0065FC;
 	font-size: 1.2rem;
 	margin-right: 0.4rem;
+	margin-left: -0.1em;
 }
 
+#filtre-btn-2 span {
 
+}
 
+/* ---- Infos ---- */
 
-
-
-
+#header-infos {
+	display: flex;
+	align-items: center;
+}
+#header-infos span {
+	padding: 1em 1.3em 1em 1.3em; 
+	border-radius: 50px;
+	border: 1px solid lightgrey;
+	color: #0065FC;
+	font-size: 0.7em;
+	margin-right: 0.6em;
+}
 
 
 
