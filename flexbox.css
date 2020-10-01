@@ -64,7 +64,6 @@
 
 
 
-
 	/* --- Form / Search bar --- */
 	#header-search {
 		display: inline-flex;
@@ -102,11 +101,6 @@
 
 
 
-
-
-
-
-
 	/* ---- Fltres ---- */
 
 	#header-filtres {
@@ -131,6 +125,103 @@
 	#header-infos {
 		align-items: center;
 	}
+
+
+
+
+
+	/* ---- Hébergement ---- */
+
+	#herbergements {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	#hebergements-results-title {
+		margin-bottom: 0;
+	}
+
+	#hebergements-results {
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		margin: 1em;
+		width: 880px;
+		height: 625px;
+		padding: 1em;
+	}
+		#hebergements-r {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0;
+
+		}
+
+		.hebergement {
+			margin: 1em;
+			width: 245px;
+		}	
+		.hebergement img {
+			width: 235px;
+			height: 115px;
+		}	
+
+		
+		#hebergements-results #show-more {
+			margin-top: 1em;
+		}
+
+
+	#hebergements-populaires {
+		order: 1;
+		border-radius: 20px;
+		margin: 1em;
+		width: 420px;
+		height: 625px;
+		align-content: space-around;
+		padding: 1em;
+	}
+
+		.hebergement-populaire {
+			margin-bottom: 2em;
+		}
+
+
+	/* ---- Activités ---- */
+
+	#activites {
+		flex-direction: row;
+	}
+
+	#activites-results {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.activite {
+		width: 300px;
+	}
+
+	/* image activité */
+	.activite img {
+		width: 300px;
+	}
+
+	.activite:nth-child(1) img {
+		height: 390px;
+	}
+
+	.activite:nth-child(2) img {
+		height: 180px;
+		align-self: flex-start;
+	}
+
+	.activite:nth-child(3) img {
+		height: 110px;
+		align-self: flex-end;
+	}
+
 
 }
 
