@@ -195,8 +195,10 @@
 
 	#activites-results {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
+		height: 470px;
+		justify-content: space-between;
 	}
 
 	.activite {
@@ -214,12 +216,22 @@
 
 	.activite:nth-child(2) img {
 		height: 180px;
-		align-self: flex-start;
 	}
 
 	.activite:nth-child(3) img {
 		height: 110px;
-		align-self: flex-end;
+	}
+
+	.activite:nth-child(4) img {
+		height: 390px;
+	}
+
+	.activite:nth-child(5) img {
+		height: 140;
+	}
+
+	.activite:nth-child(6) img {
+		height: 150;
 	}
 
 
