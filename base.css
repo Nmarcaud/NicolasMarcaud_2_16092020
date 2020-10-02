@@ -10,6 +10,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
 }
+
 ul {
   	margin: 0;
   	padding: 0;
@@ -36,6 +37,11 @@ img {
 /* Ombre */
 .shadow {
 	box-shadow: 2px 2px 15px rgba(0,0,0,.07);
+}
+
+.container {
+	max-width: 100%;
+	width: 100%;
 }
 
 
@@ -158,6 +164,7 @@ h2 {
 #form-searchfield {
 	font-weight: bold;
 	font-size: 1.2em;
+	flex-grow: 2;
 }
 
 #form-text-btn {
@@ -295,13 +302,13 @@ h2 {
 		object-fit: cover;		
 	    object-position: center center;
 	    border-radius: 15px 0 0 15px;
-	    margin-right: 1em;
 	}
 
 	/* box description */
 	.hebergement-populaire-description {
 		display: flex;
 		flex-direction: column;
+		padding-left: 1em;
 	}
 
 	/* Nom de l'hotel */
@@ -421,6 +428,35 @@ h2 {
 .activite-text h3 {
 	padding: 1em;
 	font-size: 1.1em;
+}
+
+
+
+footer {
+	background-color: #F2F2F2;
+	padding: 0.5em 1em;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: column;
+}
+
+footer nav .menu {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 0;
+}
+
+footer nav .menu a {
+	color: black;
+	margin-bottom: 0.5em;
+
+}
+
+footer nav .menu h6 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
 }
 
 
