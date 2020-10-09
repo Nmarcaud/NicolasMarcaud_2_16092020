@@ -118,7 +118,6 @@ h2 {
 
 
 /* --- Header text --- */
-
 #header-text {
 	margin-top : 1em;
 }
@@ -126,8 +125,6 @@ h2 {
 #header-text h2{
 	margin-bottom: 0.5em;
 }
-
-
 
 
 
@@ -165,6 +162,7 @@ h2 {
 	font-weight: bold;
 	font-size: 1.2em;
 	flex-grow: 2;
+	height: 100%;
 }
 
 #form-text-btn {
@@ -185,7 +183,6 @@ h2 {
 
 
 /* ---- Fltres ---- */
-
 #header-filtres {
 	display: flex;
 	flex-direction: column;
@@ -209,6 +206,8 @@ h2 {
 	font-weight: bold;
 }
 
+
+
 /* Pictos */
 #header-filtres li span {
 	padding: 0.8em; 
@@ -225,7 +224,6 @@ h2 {
 }
 
 /* ---- Infos ---- */
-
 #header-infos {
 	display: flex;
 	align-items: flex-start;
@@ -247,7 +245,6 @@ h2 {
 
 
 /* ---- Hébergement ---- */
-
 #herbergements {
 	display: flex;
 	flex-direction: column;
